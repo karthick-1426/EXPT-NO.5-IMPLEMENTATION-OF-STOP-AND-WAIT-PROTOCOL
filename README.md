@@ -8,7 +8,7 @@ To implement Stop and Wait protocol using NS2 program.
 2.	NS2 Software
 
 # ALGORITHM
-Step 1: Start the program.
+Step 1. Start the program.
 Step 2: Declare the global variables ns for creating a new simulator. Step 3: Open the network animator file in the write mode.
 Step 4: Open the trace file in the write mode. Step 5: Transfer the packets in network.
 Step 6: Create the capable no of nodes.
@@ -20,6 +20,7 @@ Step 13: In the definition of the finish procedure declare the global variables.
 Step 16: Stop the program.
  
 # PROGRAM
+```
 set ns [new Simulator]
 set namfile [open out.nam w]
 $ns namtrace-all $namfile proc finish {}
@@ -67,14 +68,9 @@ $ns at 3.1 "$ns trace-annotate \"FTP stops\""
 $ns at 0.0 "$n0 label Sender"
 $ns at 0.0 "$n1 label Receiver"
 $ns run
- 
+```
 # OUTPUT
-
-
-
-
-
-
+<img width="1600" height="889" alt="image" src="https://github.com/user-attachments/assets/1ee1d4ef-f49a-4851-aafb-0b3c17d1d808" />
 
 
 
